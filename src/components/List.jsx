@@ -1,15 +1,16 @@
 import React from 'react';
 
+const arrHobies = ['Leer', 'Escuchar música', 'Cantar']
+
 const List = () => (
   <div>
     <h5>Mis hobbies</h5>
-    <ul>
-      <li>Leer</li>
-      <li>Escuchar música</li>
-      <li>Cantar</li>
-    </ul>
+    <ul>{arrHobies.map(el => (
+        <li>{el}</li>
+      ))}</ul>
   </div>
 )
 
+//
 
 export default List;
